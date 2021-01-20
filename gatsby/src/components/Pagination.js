@@ -33,7 +33,6 @@ const Pagination = ({ pageSize, totalCount, currentPage, skip, base }) => {
   const nextPage = currentPage + 1;
   const hasNextPage = nextPage <= totalPages;
   const hasPrevPage = prevPage >= 1;
-  console.log(totalCount);
   return (
     <PaginationStyles>
       <Link disabled={!hasPrevPage} to={`${base}/${prevPage}`}>
